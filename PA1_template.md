@@ -3,6 +3,8 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+    fig.keep: "all"
+    fig.show: "hold"
 ---
 
 
@@ -50,7 +52,31 @@ stepsInterval <- measurements %>%
 
 plot(stepsInterval$interval, stepsInterval$steps, 
      type="l", xlab = "Interval", ylab = "Average steps", 
-     main = "Average Daily Activity Pattern")
+     main = "Average Daily Activity Pattern", fig.keep="last")
+```
+
+```
+## Warning in plot.window(...): "fig.keep" is not a graphical parameter
+```
+
+```
+## Warning in plot.xy(xy, type, ...): "fig.keep" is not a graphical parameter
+```
+
+```
+## Warning in axis(side = side, at = at, labels = labels, ...): "fig.keep" is
+## not a graphical parameter
+
+## Warning in axis(side = side, at = at, labels = labels, ...): "fig.keep" is
+## not a graphical parameter
+```
+
+```
+## Warning in box(...): "fig.keep" is not a graphical parameter
+```
+
+```
+## Warning in title(...): "fig.keep" is not a graphical parameter
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)

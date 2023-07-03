@@ -3,6 +3,8 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+    fig.keep: "all"
+    fig.show: "hold"
 ---
 
 
@@ -38,7 +40,7 @@ stepsInterval <- measurements %>%
 
 plot(stepsInterval$interval, stepsInterval$steps, 
      type="l", xlab = "Interval", ylab = "Average steps", 
-     main = "Average Daily Activity Pattern")
+     main = "Average Daily Activity Pattern", fig.keep="last")
 
 stepsInterval$interval[which.max(stepsInterval$steps)] #835
 
