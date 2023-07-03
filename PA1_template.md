@@ -87,7 +87,7 @@ hist(stepsPerDayNoNAs$steps, main = "Total Number of Steps per Day (no NAs)",
      xlab = "Steps", ylab = "Frequency")
 ```
 
-![Total_Number_of Steps_per_Day_(no_NAs)](PA1_figures/Total_Number_of Steps_per_Day_(no_NAs).png)
+![Total_Number_of_Steps_per_Day_(no_NAs)](PA1_figures/Total_Number_of_Steps_per_Day_(no_NAs).png)
 
 ```r
 mean(stepsPerDayNoNAs$steps) # 9354.23
