@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-        keep_md: true
+
 ---
 
 ## Loading and preprocessing the data
