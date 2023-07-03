@@ -17,7 +17,7 @@ stepsPerDay <- measurements %>%
 ```
 
 ```
-![Example Image](Total Number of Steps per Day (no NAs).png)
+<img src="Total Number of Steps per Day (no NAs).png" alt="Alt Text">
 ```
 
 ```r
