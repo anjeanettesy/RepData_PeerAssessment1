@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-author: "Anjeanette"
+        keep_md: true
 ---
 
 ## Loading and preprocessing the data
