@@ -1,20 +1,9 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+library(dplyr)
 
-
-## Loading and preprocessing the data
-```{r}
-
+# Loading and preprocessing the data
 measurements <- read.csv(unz("activity.zip", "activity.csv"))
 
-```
-## What is mean total number of steps taken per day?
-```{r}
-
+# What is mean total number of steps taken per day?
 stepsPerDay <- measurements %>%
         group_by(date) %>%
         summarize(steps = sum(steps))
@@ -24,14 +13,8 @@ hist(stepsPerDay$steps, main = "Total Number of Steps per Day",
 
 mean(stepsPerDay$steps, na.rm = TRUE) # 10766.19
 median(stepsPerDay$steps, na.rm = TRUE) # 10765
-        
 
-```
-
-
-## What is the average daily activity pattern?
-```{r}
-
+# What is the average daily activity pattern?
 stepsInterval <- measurements %>%
         group_by(interval) %>%
         summarize(steps = mean(steps, na.rm = TRUE))
@@ -42,12 +25,7 @@ plot(stepsInterval$interval, stepsInterval$steps,
 
 stepsInterval$interval[which.max(stepsInterval$steps)] #835
 
-```
-
-
-## Imputing missing values
-```{r}
-
+# Imputing missing values
 sum(is.na(measurements$steps)) # 2304
 
 measurements_new <- measurements
@@ -62,14 +40,8 @@ hist(stepsPerDayNoNAs$steps, main = "Total Number of Steps per Day (no NAs)",
 
 mean(stepsPerDayNoNAs$steps) # 9354.23
 median(stepsPerDayNoNAs$steps) # 10395
-        
 
-```
-
-
-## Are there differences in activity patterns between weekdays and weekends?
-```{r}
-
+# Are there differences in activity patterns between weekdays and weekends?
 measurements_new$date <- as.Date(measurements_new$date)
 measurements_new$day_type <- ifelse(weekdays(measurements_new$date) %in% c("Saturday", "Sunday"), "weekend", "weekday")
 
@@ -87,4 +59,4 @@ stepsInterval_Weekend <- measurements_weekend %>%
 plot(stepsInterval_Weekday, type = "l", main = "Weekdays")
 plot(stepsInterval_Weekend, type = "l", main = "Weekends")
 
-```
+
