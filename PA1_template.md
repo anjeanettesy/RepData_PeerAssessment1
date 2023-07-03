@@ -17,7 +17,7 @@ stepsPerDay <- measurements %>%
 ```
 
 ```
-![alt text]([http://url.png](https://github.com/anjeanettesy/RepData_PeerAssessment1/blob/master/Total%20Number%20of%20Steps%20per%20Day.png))
+![Sample panel plot](instructions_fig/sample_panelplot.png) 
 ```
 
 ```r
