@@ -22,7 +22,7 @@ hist(stepsPerDay$steps, main = "Total Number of Steps per Day",
      xlab = "Steps", ylab = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![Total_Number_of_Steps_per_Day](PA1_figures/Total_Number_of_Steps_per_Day.png) 
 
 ```r
 mean(stepsPerDay$steps, na.rm = TRUE) # 10766.19
@@ -53,7 +53,8 @@ plot(stepsInterval$interval, stepsInterval$steps,
      main = "Average Daily Activity Pattern")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![Average_Daily_Activity_Pattern](PA1_figures/Average_Daily_Activity_Pattern.png) 
+
 
 ```r
 stepsInterval$interval[which.max(stepsInterval$steps)] #835
@@ -86,7 +87,7 @@ hist(stepsPerDayNoNAs$steps, main = "Total Number of Steps per Day (no NAs)",
      xlab = "Steps", ylab = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![Total_Number_of Steps_per_Day_(no_NAs)](PA1_figures/Total_Number_of Steps_per_Day_(no_NAs).png)
 
 ```r
 mean(stepsPerDayNoNAs$steps) # 9354.23
@@ -125,10 +126,10 @@ stepsInterval_Weekend <- measurements_weekend %>%
 plot(stepsInterval_Weekday, type = "l", main = "Weekdays")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![Weekdays](PA1_figures/Weekdays.png)
 
 ```r
 plot(stepsInterval_Weekend, type = "l", main = "Weekends")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-2.png)
+![Weekends](PA1_figures/Weekends.png)
