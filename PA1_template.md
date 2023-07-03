@@ -17,7 +17,7 @@ stepsPerDay <- measurements %>%
 ```
 
 ```
-<img src="[Total Number of Steps per Day (no NAs).png](https://github.com/anjeanettesy/RepData_PeerAssessment1/blob/36dd4eab49c41fb74eb00b33791a1a2582443e38/Total%20Number%20of%20Steps%20per%20Day%20(no%20NAs).png)" alt="Alt Text">
+![alt text]([http://url.png](https://github.com/anjeanettesy/RepData_PeerAssessment1/blob/master/Total%20Number%20of%20Steps%20per%20Day.png))
 ```
 
 ```r
