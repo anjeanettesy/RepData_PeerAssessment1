@@ -17,7 +17,7 @@ stepsPerDay <- measurements %>%
 ```
 
 ```
-## Error in measurements %>% group_by(date) %>% summarize(steps = sum(steps)): could not find function "%>%"
+![Example Image](Total Number of Steps per Day (no NAs).png)
 ```
 
 ```r
