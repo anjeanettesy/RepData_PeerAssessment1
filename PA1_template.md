@@ -1,6 +1,9 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-
+output:
+        html_document: 
+        df_print: paged
+        keep_md: yes
 ---
 
 ## Loading and preprocessing the data
@@ -17,7 +20,7 @@ stepsPerDay <- measurements %>%
 ```
 
 ```
-![Sample panel plot](instructions_fig/sample_panelplot.png) 
+## Error in measurements %>% group_by(date) %>% summarize(steps = sum(steps)): could not find function "%>%"
 ```
 
 ```r

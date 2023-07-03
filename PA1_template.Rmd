@@ -1,6 +1,9 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-        keep_md: true
+output:
+        html_document: 
+        df_print: paged
+        keep_md: yes
 ---
 
 ## Loading and preprocessing the data
